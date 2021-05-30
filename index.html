@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Your Page Title</title>
+  <title>Beat the receipt</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Your name">
@@ -13,14 +14,17 @@
   <meta property="og:site_name" content="Your Site Name">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image:alt" content="image description">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
+
 <body>
   <section class="jumbotron">
-    <div class="header_text">
-      <h1>Beat the receipt</h1>
-      <h3>Ditch the paper, save the planet</h3>
+    <div>
+      <h1 class="header-text">Beat the receipt</h1>
+      <h3 class="header-subtext">Ditch the paper, save the planet</h3>
     </div>
   </section>
 
@@ -29,45 +33,47 @@
     <a href="#" class="btn-link">Sign the paperless pledge today!</a>
   </section>
 
-  <section class="overview">
-    <div>
-      <div class="left-panel">
-        <h2>
+  <section class="overview container">
+    <div class="row overview-top">
+      <div class="col-12 col-md-6">
+        <h2 class="header-2">
           Most paper receipts are impossible to recycle
         </h2>
-  
+
         <p>
-          Paper receipts contain the same chemicals used in single-use plastic, making them impossible to recycle. They're also an incredible drain on our natural resources.
+          Paper receipts contain the same chemicals used in single-use plastic, making them impossible to recycle.
+          They're also an incredible drain on our natural resources.
         </p>
-  
+
         <p>Besides - when was the last time you looked at one?</p>
       </div>
-      <div class="right-panel">
-        
-      </div>
-    </div>
-    <div>
-      <div>
+      <div class="col-12 col-md-6">
         <img src="" alt="">
       </div>
-    <div>
-      <h2>Small changes have a big impact</h2>
-      <p>Saying no to a paper receipt is one of the easiest ways that you can reduce your carbon footprint. Use our receipt carbon calculator to see how much carbon you could save by going paperless.
-      </p>
     </div>
+    <div class="row overview-bottom">
+      <div class="col-12 col-md-6">
+        <img src="./assets/paper.svg" alt="" class="icon">
+      </div>
+      <div class="col-12 col-md-6">
+        <h2 class="header-2">Small changes have a big impact</h2>
+        <p>Saying no to a paper receipt is one of the easiest ways that you can reduce your carbon footprint. Use our
+          receipt carbon calculator to see how much carbon you could save by going paperless.
+        </p>
+      </div>
     </div>
-    
+
   </section>
 
 
   <section id="footprint" class="footprint">
-    <h1>Calculate your annual receipt footprint</h1>
+    <h1 class="header-1">Calculate your annual receipt footprint</h1>
 
     <p>Average number of transactions per week:</p> <span>21</span>
 
     <progress max="100" value="70">70%</progress>
 
-    <div>
+    <div class="d-flex justify-content-around align-items-center">
       <div class="box">
         <h2>2.73kg</h2>
         <h4>of CO2e</h4>
@@ -88,53 +94,59 @@
     </div>
 
     <div>
-      <h4>Your individual footprint may seem small, but imagine the number of transactions made each day at businesses up and down the country - each of our small footprints add up to a huge environmental problem</h4>
+      <h4 class="text-center my-5">Your individual footprint may seem small, but imagine the number of transactions made each day at businesses
+        up and down the country - each of our small footprints add up to a huge environmental problem</h4>
     </div>
 
     <!-- SMALL BUSINESS -->
-    <div>
-      <div>
-        Small business
-      </div>
-      <div>
-        26,000kg
-of CO2e
-      </div>
-      <div>
-        2,600,000
-Plastic bags
-      </div>
-      <div>
-        52,000
-Pints of beer
-      </div>
-      <div>
-        10,400
-Cheese burgers
+    <div class="smallbiz container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          Small business
+        </div>
+        <div>
+          26,000kg
+          of CO2e
+        </div>
+        <div>
+          2,600,000
+          Plastic bags
+        </div>
+        <div>
+          52,000
+          Pints of beer
+        </div>
+        <div>
+          10,400
+          Cheese burgers
+        </div>
       </div>
       <h6>*based on 20k transactions per week</h6>
     </div>
 
     <!-- LARGE BUSINESS -->
-    <div>
-      <div>
-        Large business
-      </div>
-      <div>
-        325,000kg
-        of CO2e
-      </div>
-      <div>
-        32,500,000
-        Plastic bags
-      </div>
-      <div>
-        650,000
-Pints of beer
-      </div>
-      <div>
-        130,000
-Cheese burgers
+    <div class="largebiz container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          Large business
+        </div>
+        <div>
+          325,000kg
+          of CO2e
+        </div>
+        <div>
+          32,500,000
+          Plastic bags
+        </div>
+        <div>
+          650,000
+          Pints of beer
+        </div>
+        <div>
+          130,000
+          Cheese burgers
+        </div>
+
       </div>
       <h6>*based on 250k transactions per week
       </h6>
@@ -143,301 +155,335 @@ Cheese burgers
 
 
   <!-- DOWNLOAD REPORT -->
-  <section class="downlaod">   
-    <div>
-      <h2>Download the report to learn more about the environmental effects of paper receipts
-      </h2>
-    </div>
-    <div>
-      <img src="" alt="">
+  <section class="download container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h2 class="header-2">Download the report to learn more about the environmental effects of paper receipts
+        </h2>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="./assets/download.svg" alt="" class="icon">
+      </div>
     </div>
   </section>
 
- <!-- TREES -->
- <div class="tree border-top-5">
-   <div>
-     <img src="" alt="">
-   </div>
-   <div>
-     <div>
-       <p>
-        Every year around 200,000 trees are destroyed in order to supply the UK with our paper receipts. For context, that’s more trees than are in all of London’s eight Royal Parks combined. Trees are vital to our planet’s health: they give us oxygen, trap dust and pollution from the atmosphere, and help stabilise our natural environments.
-       </p>
-       <p>
-        But most importantly, they help us to combat global warming by trapping excess carbon in their wood. If we left the trees we use for receipts in the ground, they’d remove over 4,000 tonnes of carbon dioxide from our environment every year.
-       </p>
-     </div>
-     <a href="#" class="top">Back to infrographic</a>
-   </div>
- </div>
+  <!-- TREES -->
+  <div class="tree row">
+    <div class="col-12 col-md-6">
+      <img src="./assets/tree.svg" alt="" class="icon">
+    </div>
+    <div class="col-12 col-md-6">
+      <div>
+        <p>
+          Every year around 200,000 trees are destroyed in order to supply the UK with our paper receipts. For context,
+          that’s more trees than are in all of London’s eight Royal Parks combined. Trees are vital to our planet’s
+          health: they give us oxygen, trap dust and pollution from the atmosphere, and help stabilise our natural
+          environments.
+        </p>
+        <p>
+          But most importantly, they help us to combat global warming by trapping excess carbon in their wood. If we
+          left the trees we use for receipts in the ground, they’d remove over 4,000 tonnes of carbon dioxide from our
+          environment every year.
+        </p>
+      </div>
+      <a href="#" class="top">Back to infrographic</a>
+    </div>
+  </div>
 
 
- <!-- CHEMICALS -->
- <div class="tree border-top-5">
-   <div>
-     <img src="" alt="">
-   </div>
-   <div>
-     <div>
-       <p>
-        It’s estimated that more than half of all receipts printed in Europe contain toxic chemicals called bisphenol A (BPA) or bisphenol S (BPS).These are the same chemicals that are found in single-use plastics and make receipts almost impossible to recycle because these chemicals contaminate other recycled products during the process. </p>
-       <p>
-        When we touch receipts, the chemical coating is absorbed into our bodies in seconds and studies have suggested it may act as an endocrine disruptor, causing developmental and reproductive issues for both humans and aquatic life. It’s estimated that over 120 tonnes of BPA is used in the production of the UK’s receipts each year.</p>
-     </div>
-     <a href="#" class="top">Back to infrographic</a>
-   </div>
- </div>
+  <!-- CHEMICALS -->
+  <div class="chemicals row">
+    <div class="col-12 col-md-6">
+      <img src="./assets/bottle.svg" alt="" class="icon">
+    </div>
+    <div class="col-12 col-md-6">
+      <div>
+        <p>
+          It’s estimated that more than half of all receipts printed in Europe contain toxic chemicals called bisphenol
+          A (BPA) or bisphenol S (BPS).These are the same chemicals that are found in single-use plastics and make
+          receipts almost impossible to recycle because these chemicals contaminate other recycled products during the
+          process. </p>
+        <p>
+          When we touch receipts, the chemical coating is absorbed into our bodies in seconds and studies have suggested
+          it may act as an endocrine disruptor, causing developmental and reproductive issues for both humans and
+          aquatic life. It’s estimated that over 120 tonnes of BPA is used in the production of the UK’s receipts each
+          year.</p>
+      </div>
+      <a href="#" class="top">Back to infrographic</a>
+    </div>
+  </div>
 
 
- <!-- WASTE -->
- <div class="tree border-top-5">
-   <div>
-     <img src="" alt="">
-   </div>
-   <div>
-     <div>
-       <p>
-        Over 90% of receipts are lost, damaged, or thrown away by consumers, creating more than 10,000 tonnes of paper waste. In 2018, biodegradable waste like paper made up over one-quarter of the UK’s landfills - this kind of waste is extremely damaging to the environment because it releases a potent greenhouse gas called methane as it decomposes.</p>
-       <p>
-        Attempts to recycle thermal receipts rather than binning them is also extremely problematic - thermal paper recycling has been identified as a major source of BPA contamination in the creation of recycled paper products like toilet paper, and is a major source of BPA release to surface waters. </p>
-     </div>
-     <a href="#" class="top">Back to infrographic</a>
-   </div>
- </div>
+  <!-- WASTE -->
+  <div class="waste row">
+    <div class="col-12 col-md-6">
+      <img src="./assets/truck.svg" alt="" class="icon">
+    </div>
+    <div class="col-12 col-md-6">
+      <div>
+        <p>
+          Over 90% of receipts are lost, damaged, or thrown away by consumers, creating more than 10,000 tonnes of paper
+          waste. In 2018, biodegradable waste like paper made up over one-quarter of the UK’s landfills - this kind of
+          waste is extremely damaging to the environment because it releases a potent greenhouse gas called methane as
+          it decomposes.</p>
+        <p>
+          Attempts to recycle thermal receipts rather than binning them is also extremely problematic - thermal paper
+          recycling has been identified as a major source of BPA contamination in the creation of recycled paper
+          products like toilet paper, and is a major source of BPA release to surface waters. </p>
+      </div>
+      <a href="#" class="top">Back to infrographic</a>
+    </div>
+  </div>
 
 
- <!-- CARBON -->
- <div class="tree border-top-5">
-   <div>
-     <img src="" alt="">
-   </div>
-   <div>
-     <div>
-       <p>
-        Every year around 200,000 trees are destroyed in order to supply the UK with our paper receipts. For context, that’s more trees than are in all of London’s eight Royal Parks combined. Trees are vital to our planet’s health: they give us oxygen, trap dust and pollution from the atmosphere, and help stabilise our natural environments.
-       </p>
-       <p>
-        But most importantly, they help us to combat global warming by trapping excess carbon in their wood. If we left the trees we use for receipts in the ground, they’d remove over 4,000 tonnes of carbon dioxide from our environment every year.
-       </p>
-     </div>
-     <a href="#" class="top">Back to infrographic</a>
-   </div>
- </div>
+  <!-- CARBON -->
+  <div class="carbon row">
+    <div class="col-12 col-md-6">
+      <img src="./assets/carbon.svg" alt="" class="icon">
+    </div>
+    <div class="col-12 col-md-6">
+      <div>
+        <p>
+          Every year around 200,000 trees are destroyed in order to supply the UK with our paper receipts. For context,
+          that’s more trees than are in all of London’s eight Royal Parks combined. Trees are vital to our planet’s
+          health: they give us oxygen, trap dust and pollution from the atmosphere, and help stabilise our natural
+          environments.
+        </p>
+        <p>
+          But most importantly, they help us to combat global warming by trapping excess carbon in their wood. If we
+          left the trees we use for receipts in the ground, they’d remove over 4,000 tonnes of carbon dioxide from our
+          environment every year.
+        </p>
+      </div>
+      <a href="#" class="top">Back to infrographic</a>
+    </div>
+  </div>
 
 
- <!-- WATER-->
- <div class="tree border-top-5">
-   <div>
-     <img src="" alt="">
-   </div>
-   <div>
-     <div>
-       <p>
-        It’s estimated that 1.6 billion litres of water are used to produce the thermal paper used to print the UK’s receipts every year - that’s enough drinking water for almost 1.5 million people for an entire year. </p>
-       <p>
-        But it’s not just the water consumption that’s problematic: studies show that BPA from receipts is also leaching into our waterways during the recycling process, causing problems in the normal reproductive development of fish, reptiles and birds.</p>
-     </div>
-     <a href="#" class="top">Back to infrographic</a>
-   </div>
- </div>
+  <!-- WATER-->
+  <div class="water row">
+    <div class="col-12 col-md-6">
+      <img src="./assets/water.svg" alt="" class="icon">
+    </div>
+    <div class="col-12 col-md-6">
+      <div>
+        <p>
+          It’s estimated that 1.6 billion litres of water are used to produce the thermal paper used to print the UK’s
+          receipts every year - that’s enough drinking water for almost 1.5 million people for an entire year. </p>
+        <p>
+          But it’s not just the water consumption that’s problematic: studies show that BPA from receipts is also
+          leaching into our waterways during the recycling process, causing problems in the normal reproductive
+          development of fish, reptiles and birds.</p>
+      </div>
+      <a href="#" class="top">Back to infrographic</a>
+    </div>
+  </div>
 
- <section class="faq">
-   <h1>Frequently asked questions 🙋‍♀️</h1>
+  <section class="faq">
+    <h2 class="header-2 text-center">Frequently asked questions 🙋‍♀️</h2>
 
-   <div>
-    <details>
-      <summary>What is Beat the Receipt?</summary>
-      <p>
-        There's currently a massive push, driven by people, for businesses to be more sustainable. 
-Paper receipts are non-recyclable, consume oil, trees, and water, and they don’t fit into the digital lifestyle that we currently have. 
-The Beat the Receipt campaign seeks to raise awareness about the detrimental impact of paper receipts on our environment. 
-The main goals of the campaign are:
-       </p>
-       <ul>
-         <li> To educate the public and increase awareness of the polluting nature of paper receipts
+    <div>
+      <details>
+        <summary>What is Beat the Receipt?</summary>
+        <p>
+          There's currently a massive push, driven by people, for businesses to be more sustainable.
+          Paper receipts are non-recyclable, consume oil, trees, and water, and they don’t fit into the digital
+          lifestyle that we currently have.
+          The Beat the Receipt campaign seeks to raise awareness about the detrimental impact of paper receipts on our
+          environment.
+          The main goals of the campaign are:
+        </p>
+        <ul>
+          <li> To educate the public and increase awareness of the polluting nature of paper receipts
           </li>
-         <li>
-        To encourage retailers to take a proactive approach by making paper receipts optional
-          
-         </li>
-         <li>● To advocate for consumer rights and work with consumer interest groups to provide 
-          customers with digital alternatives to paper receipts</li>
-       </ul>
-    </details>
-    <details>
-      <summary>What is the Paperless Pledge?</summary>
-      <p>
-        The Paperless Pledge is a commitment from retailers to make the printing of paper receipts optional. 
-      </p>
-      <p>
-        Currently, most tills will automatically print a paper receipt, regardless of whether the customer wants or needs one. 
-Some forward-thinking companies have already started on the journey to becoming paperless, 
-but this process isn’t formalised yet so we’re campaigning to make sure it becomes the standard.
-      </p>
-      <p>
-        It's our aim that from 2023 paper receipts will be opt-in, rather than opt-out in all retail stores in the UK.
-      </p>
-    </details>
-    <details>
-      <summary>Why are paper receipts bad for the environment?</summary>
-      <p>In the UK alone we print over 11.2 billion receipts every year and 90% of them are lost, damaged, or
-        thrown away by consumers. These receipts have substantial climate change impacts across their lifecycle -
-        from sourcing raw materials like trees, oil, and water; during their production and transport, through to their 
-        end-of-life disposal.</p>
+          <li>
+            To encourage retailers to take a proactive approach by making paper receipts optional
+
+          </li>
+          <li>● To advocate for consumer rights and work with consumer interest groups to provide
+            customers with digital alternatives to paper receipts</li>
+        </ul>
+      </details>
+      <details>
+        <summary>What is the Paperless Pledge?</summary>
+        <p>
+          The Paperless Pledge is a commitment from retailers to make the printing of paper receipts optional.
+        </p>
+        <p>
+          Currently, most tills will automatically print a paper receipt, regardless of whether the customer wants or
+          needs one.
+          Some forward-thinking companies have already started on the journey to becoming paperless,
+          but this process isn’t formalised yet so we’re campaigning to make sure it becomes the standard.
+        </p>
+        <p>
+          It's our aim that from 2023 paper receipts will be opt-in, rather than opt-out in all retail stores in the UK.
+        </p>
+      </details>
+      <details>
+        <summary>Why are paper receipts bad for the environment?</summary>
+        <p>In the UK alone we print over 11.2 billion receipts every year and 90% of them are lost, damaged, or
+          thrown away by consumers. These receipts have substantial climate change impacts across their lifecycle -
+          from sourcing raw materials like trees, oil, and water; during their production and transport, through to
+          their
+          end-of-life disposal.</p>
 
         <p>
-          Paper receipts can't be recycled because they contain toxic chemicals that leach out and contaminate other 
-products during the recycling process, so the majority end up in landfill, where they release harmful 
-greenhouse gases into the environment as they decompose. 
-When you combine this with the huge amount of natural resources required to make and transport these receipts, 
-the scale of the problem becomes clear: paper receipts are the hidden problem damaging our environment.
+          Paper receipts can't be recycled because they contain toxic chemicals that leach out and contaminate other
+          products during the recycling process, so the majority end up in landfill, where they release harmful
+          greenhouse gases into the environment as they decompose.
+          When you combine this with the huge amount of natural resources required to make and transport these receipts,
+          the scale of the problem becomes clear: paper receipts are the hidden problem damaging our environment.
         </p>
-    </details>
-    <details>
-      <summary>What's the carbon footprint of my paper receipt?</summary>
-      <p>
-        We recently commissioned a report from the Carbon Trust to determine the carbon footprint of a paper receipt.
-This report confirmed that an average-sized paper receipt emits around 2.5g of carbon during its lifetime - 
-from production, to transport, to landfill.
-      </p>
-      <p>
-        With 11.2bn receipts printed each year in the UK, that’s a whopping 28,000 tonnes of CO2e entering our
-atmosphere every year, which is the same level of emissions as flying from London to Sydney over 10,000 
-times or burning 30 million pounds of coal. 
+      </details>
+      <details>
+        <summary>What's the carbon footprint of my paper receipt?</summary>
+        <p>
+          We recently commissioned a report from the Carbon Trust to determine the carbon footprint of a paper receipt.
+          This report confirmed that an average-sized paper receipt emits around 2.5g of carbon during its lifetime -
+          from production, to transport, to landfill.
+        </p>
+        <p>
+          With 11.2bn receipts printed each year in the UK, that’s a whopping 28,000 tonnes of CO2e entering our
+          atmosphere every year, which is the same level of emissions as flying from London to Sydney over 10,000
+          times or burning 30 million pounds of coal.
 
-      </p>
-      <p>
-        Saying no to paper receipts at the till is one of the quickest and easiest ways to reduce your carbon footprint.
-      </p>
-    </details>
-    <details>
-      <summary>How did you calculate the carbon emissions of a paper receipt?</summary>
-      <p>In order to calculate cradle to grave emissions of an average paper receipt in the UK, 
-        the Carbon Trust made assumptions on type and size of paper receipts. The following assumptions were made: </p>
+        </p>
+        <p>
+          Saying no to paper receipts at the till is one of the quickest and easiest ways to reduce your carbon
+          footprint.
+        </p>
+      </details>
+      <details>
+        <summary>How did you calculate the carbon emissions of a paper receipt?</summary>
+        <p>In order to calculate cradle to grave emissions of an average paper receipt in the UK,
+          the Carbon Trust made assumptions on type and size of paper receipts. The following assumptions were made:
+        </p>
         <ul>
           <li>Most common type of paper used in receipts was Thermal Paper
-            </li>
+          </li>
           <li> ● Thermal Paper Receipts average size and weight was calculated based on industry averages.
             <ul>
               <li>● Receipts are on average 9 inches in length and 3.125 inches wide
-                </li>
+              </li>
               <li>● Three sizes were estimated based on an average grams per square meter of 50, 58 and 65 g/m2 </li>
             </ul>
           </li>
         </ul>
         <p>
           The paper receipt calculation included emission from the paper production process,
-material transport, printing emissions (average electricity consumption and assumption
-of heat-based printing therefore no ink) and finally the end of life treatment of receipts.
+          material transport, printing emissions (average electricity consumption and assumption
+          of heat-based printing therefore no ink) and finally the end of life treatment of receipts.
         </p>
         <p>
           The Carbon Trust looked at two different end of life scenarios including:
         </p>
-        
+
         <ul>
           <li>● UK average split of recycling, incineration with energy recovery and landfill
-            </li>
+          </li>
           <li>● 100% landfill scenario</li>
         </ul>
 
-        <p>For receipts that end up in landfill (which is almost all of them, as they can't safely be recycled) 
+        <p>For receipts that end up in landfill (which is almost all of them, as they can't safely be recycled)
           the cradle-to-grave emissions were found to be 2.5g CO2e.</p>
-    </details>
-    <details>
-      <summary>What is BPA/BPS?</summary>
-      <p>Bisphenol A and Bisphenol S (BPA and BPS) are industrial chemicals that are commonly used in the 
-        manufacture of plastics. Bisphenols are present in everyday household items like food containers and
-        plastic water bottles, and research has shown that these chemicals can leach from the plastic into 
-        food and beverages stored inside.
-      </p>
+      </details>
+      <details>
+        <summary>What is BPA/BPS?</summary>
+        <p>Bisphenol A and Bisphenol S (BPA and BPS) are industrial chemicals that are commonly used in the
+          manufacture of plastics. Bisphenols are present in everyday household items like food containers and
+          plastic water bottles, and research has shown that these chemicals can leach from the plastic into
+          food and beverages stored inside.
+        </p>
 
-      <p>These same chemicals are also used in the production of thermal receipt paper, and it's estimated 
-        that over half of the receipts in Europe contain either BPA or BPS. When we touch receipts, the 
-        chemical coating is absorbed into our bodies in seconds and studies have suggested it may act as 
-        an endocrine disruptor, causing developmental and reproductive issues. In addition to this, the 
-        presence of BPA and BPS in receipts means that they are unable to be recycled because these chemicals
-        leach into wastewater during the recycling process and contaminate other newly created paper items 
-        like tissues and toilet paper. There's also evidence that these chemicals make their way into the 
-        natural environment, contaminating water and soil and causing hormone disruptions in natural wildlife.</p>
-    </details>
-    <details>
-      <summary>Details</summary>
-      <p>
-        Lorem ipsum dolor sit amet, eu alia suscipit mei. Reque iriure delectus vix id, ex sed forensibus suscipiantur. In eos exerci mollis apeirian, an qui latine alienum. Ad mea libris maluisset, consul assueverit sea ex.
-      </p>
-    </details>
-    <details>
-      <summary>How can I take action?</summary>
-      <p>There are a number of ways you can support our campaign, including:</p>
+        <p>These same chemicals are also used in the production of thermal receipt paper, and it's estimated
+          that over half of the receipts in Europe contain either BPA or BPS. When we touch receipts, the
+          chemical coating is absorbed into our bodies in seconds and studies have suggested it may act as
+          an endocrine disruptor, causing developmental and reproductive issues. In addition to this, the
+          presence of BPA and BPS in receipts means that they are unable to be recycled because these chemicals
+          leach into wastewater during the recycling process and contaminate other newly created paper items
+          like tissues and toilet paper. There's also evidence that these chemicals make their way into the
+          natural environment, contaminating water and soil and causing hormone disruptions in natural wildlife.</p>
+      </details>
+      <details>
+        <summary>Details</summary>
+        <p>
+          Lorem ipsum dolor sit amet, eu alia suscipit mei. Reque iriure delectus vix id, ex sed forensibus
+          suscipiantur. In eos exerci mollis apeirian, an qui latine alienum. Ad mea libris maluisset, consul assueverit
+          sea ex.
+        </p>
+      </details>
+      <details>
+        <summary>How can I take action?</summary>
+        <p>There are a number of ways you can support our campaign, including:</p>
 
-      <ul>
-        <li>
-          Say no to paper receipts at the till! 
-        </li>
-        <li>
-          Let your favourite retailers know about the campaign and the problems with paper receipts
-        </li>
-        <li>
-          ● Encourage use of alternative solutions like Flux digital receipts
-        </li>
-        <li>
-          Help us spread the word by downloading and sharing our report from beatthereceipt.com
-        </li>
-      </ul>
-    </details>
-    <details>
-      <summary>What's the environmental impact of digital receipts?</summary>
-     <p>
-      The environmental impact of digital receipts depends almost entirely on the type of energy
-      used by the data centres used to power them.
-     </p>
-     <p>
-      At Flux, our data centres are powered by Amazon Web Services who've confirmed that our data is hosted 
-      in a fully carbon neutral data centre. 
-     </p>
-     <p>
-      The Carbon Trust found that digital receipts powered by 100% renewables emit roughly 0.12g CO2e each.
-      Interestingly, they also found that the carbon footprint of digital receipts also reduced with scale
-      - so the more digital receipts we use, the lower the overall footprint for digital receipts becomes!
-     </p>
-    </details>
-    <details>
-      <summary>What's the relationship between Beat the Receipt and Flux?</summary>
-     <p>Beat the Receipt is a campaign group started by Flux in 2019 in order to educate the public
-      and encourage retailers to be more sustainable with regards to paper receipts.
-      </p>
-     <p>
-      The Beat the Receipt campaign does not push for digital alternatives to paper receipts. 
-      Rather, its sole aim is to reduce the number of paper receipts being printed unnecessarily. 
-      Supporters of the Beat the Receipt campaign have relationships with the campaign staff, 
-      not with Flux, and there is no requirement to be working with Flux in order to support the campaign.
-     </p>
-    </details>
-    <details>
-      <summary>What if I still need a paper receipt?</summary>
-      <P>
-        Optional printing doesn't mean an end to paper receipts - 
-it just means that we'll only be printing them if we need them.
-      </P>
-      <P>
-        Some people will still want to receive a paper receipt, and they still can. However, we found 
-that over half of UK shoppers now want the option to refuse a paper receipt at the checkout, 
-with 53% saying that retailers should try to reduce the amount of paper they waste on receipts. 
-      </P>
-      <P>
-        We also found the tipping point for wanting a receipt was £25.50, 
-so even those who love paper receipts might refuse them for small purchases. 
-In any case, making paper receipts optional will have no detrimental impact for customers 
-- anyone who wants a paper receipt will still be able to get one.
-      </P>
-    </details>
-   </div>
+        <ul>
+          <li>
+            Say no to paper receipts at the till!
+          </li>
+          <li>
+            Let your favourite retailers know about the campaign and the problems with paper receipts
+          </li>
+          <li>
+            ● Encourage use of alternative solutions like Flux digital receipts
+          </li>
+          <li>
+            Help us spread the word by downloading and sharing our report from beatthereceipt.com
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>What's the environmental impact of digital receipts?</summary>
+        <p>
+          The environmental impact of digital receipts depends almost entirely on the type of energy
+          used by the data centres used to power them.
+        </p>
+        <p>
+          At Flux, our data centres are powered by Amazon Web Services who've confirmed that our data is hosted
+          in a fully carbon neutral data centre.
+        </p>
+        <p>
+          The Carbon Trust found that digital receipts powered by 100% renewables emit roughly 0.12g CO2e each.
+          Interestingly, they also found that the carbon footprint of digital receipts also reduced with scale
+          - so the more digital receipts we use, the lower the overall footprint for digital receipts becomes!
+        </p>
+      </details>
+      <details>
+        <summary>What's the relationship between Beat the Receipt and Flux?</summary>
+        <p>Beat the Receipt is a campaign group started by Flux in 2019 in order to educate the public
+          and encourage retailers to be more sustainable with regards to paper receipts.
+        </p>
+        <p>
+          The Beat the Receipt campaign does not push for digital alternatives to paper receipts.
+          Rather, its sole aim is to reduce the number of paper receipts being printed unnecessarily.
+          Supporters of the Beat the Receipt campaign have relationships with the campaign staff,
+          not with Flux, and there is no requirement to be working with Flux in order to support the campaign.
+        </p>
+      </details>
+      <details>
+        <summary>What if I still need a paper receipt?</summary>
+        <P>
+          Optional printing doesn't mean an end to paper receipts -
+          it just means that we'll only be printing them if we need them.
+        </P>
+        <P>
+          Some people will still want to receive a paper receipt, and they still can. However, we found
+          that over half of UK shoppers now want the option to refuse a paper receipt at the checkout,
+          with 53% saying that retailers should try to reduce the amount of paper they waste on receipts.
+        </P>
+        <P>
+          We also found the tipping point for wanting a receipt was £25.50,
+          so even those who love paper receipts might refuse them for small purchases.
+          In any case, making paper receipts optional will have no detrimental impact for customers
+          - anyone who wants a paper receipt will still be able to get one.
+        </P>
+      </details>
+    </div>
   </section>
 
 
   <footer>
     <div class="connected">
-      <h2>Stay connected with the campaign:</h2>
+      <h2 class="text-center">Stay connected with the campaign:</h2>
       <input type="email" name="email" id="email" placeholder="Your email">
     </div>
 
@@ -446,15 +492,18 @@ In any case, making paper receipts optional will have no detrimental impact for 
         <p>Need help?</p>
         <a href="mailto:
         hello@beatthereceipt.com">
-        hello@beatthereceipt.com</a>
-       <a href="#" target="_blank">Help Center</a>
+          hello@beatthereceipt.com</a>
+        <a href="#" target="_blank">Help Center</a>
         <div>T I F</div>
       </div>
 
-      <p>© 2021 Flux Systems Limited is registered in England and Wales (No. 09882195) and regulated by the Financial Conduct Authority as an Account Information Services Provider under the firm reference number 791 567. EU and US Patent Pending (Application No. EP3396609)</p>
+      <p class="text-center">© 2021 Flux Systems Limited is registered in England and Wales (No. 09882195) and regulated
+        by the Financial Conduct Authority as an Account Information Services Provider under the firm reference number
+        791 567. EU and US Patent Pending (Application No. EP3396609)</p>
       <a href="#" target="_blank">Cookies Policy</a>
     </div>
   </footer>
   <script src="script.js"></script>
 </body>
+
 </html>

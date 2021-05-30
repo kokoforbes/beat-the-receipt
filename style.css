@@ -1,26 +1,56 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+  color: #121212 !important;
+  text-align: center;
 }
 
-hr{
+p {
+  color: #121212;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+
+hr {
   width: 100vw;
   margin: 10px 20px;
 }
 
-.border-top-5{
-  border-top: 5px solid red;
-  margin: 0 30px;
+.header-1 {
+  color: #121212;
+  font-weight: bold;
+  line-height: 48px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.header-2 {
+  color: #121212;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.icon {
+  width: 256px;
+  height: 200px;
 }
 
 body {
-width: 100%;
-overflow-x: hidden;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.box {
+  text-align: center;
 }
 
 .jumbotron {
@@ -29,24 +59,111 @@ overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #b8e0c8;
+  color: #ffffff;
 }
 
+.header-text {
+  font-size: 75px;
+  line-height: 90px;
+  text-align: center;
+}
+
+.header-subtext {
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
 
 .subscribe {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 4em 2em;
 }
-
 
 .btn-link {
   margin: 32px 0;
   padding: 15px 30px;
   border: 1px solid #000;
+  background-color: #b8e0c8;
 }
 
-footer{
-  background-color: #000;
-  color: #FFF;
+.overview-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding: 5em 1em;
+}
+
+.overview-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5em 1em;
+}
+
+
+.smallbiz{
+  padding: 5em 0;
+}
+
+.largebiz{
+  padding: 5em 0;
+}
+
+.download {
+  padding: 5em 1em;
+}
+
+.tree {
+  border-top: 5px solid #CDEAD6;
+  margin: 0 30px;
+  padding: 7em 0;
+}
+
+.chemicals {
+  border-top: 5px solid #F8D3CE;
+  margin: 0 30px;
+  padding: 7em 0;
+}
+
+.waste {
+  border-top: 5px solid #B78A76;
+  margin: 0 30px;
+  padding: 7em 0;
+}
+
+.water {
+  border-top: 5px solid #D2E3FC;
+  margin: 0 30px;
+  padding: 7em 0;
+}
+
+.carbon {
+  border-top: 5px solid #FFEFC3;
+  margin: 0 30px;
+  padding: 7em 0;
+}
+
+.faq {
+  background-color: #BDB5A4;
+  padding: 7em 1em;
+}
+
+footer {
+  color: #fff;
+}
+
+.connected {
+  background-color: #121212;
+  color: #FFFFFF;
+  padding: 5em 1em;
+}
+
+.socials {
+  background-color: #000000;
+  padding: 5em 1em;
 }
