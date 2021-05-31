@@ -14,6 +14,7 @@
   <meta property="og:site_name" content="Your Site Name">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image:alt" content="image description">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
@@ -29,260 +30,305 @@
   </section>
 
   <section class="subscribe">
-    <p>Let's make paper receipts a thing of the past.</p>
+    <p class="text-center">Let's make paper receipts a thing of the past.</p>
     <a href="#" class="btn-link">Sign the paperless pledge today!</a>
   </section>
 
-  <section class="overview container">
-    <div class="row overview-top">
-      <div class="col-12 col-md-6">
-        <h2 class="header-2">
-          Most paper receipts are impossible to recycle
-        </h2>
+  <div class="wrapper">
+    <section class="overview" id="overview">
+      <div class="overview-top row">
+        <div class="px-3 col-md-6 col-12">
+          <h2 class="header-2">
+            Most paper receipts are impossible to recycle
+          </h2>
 
-        <p>
-          Paper receipts contain the same chemicals used in single-use plastic, making them impossible to recycle.
-          They're also an incredible drain on our natural resources.
-        </p>
+          <p>
+            Paper receipts contain the same chemicals used in single-use plastic, making them impossible to recycle.
+            They're also an incredible drain on our natural resources.
+          </p>
 
-        <p>Besides - when was the last time you looked at one?</p>
+          <p>Besides - when was the last time you looked at one?</p>
+        </div>
+        <div class="col-md-6 col-12">
+          <img src="./assets/overview.svg" alt="" class="overview-img">
+        </div>
       </div>
-      <div class="col-12 col-md-6">
-        <img src="" alt="">
-      </div>
-    </div>
-    <div class="row overview-bottom">
-      <div class="col-12 col-md-6">
-        <img src="./assets/paper.svg" alt="" class="icon">
-      </div>
-      <div class="col-12 col-md-6">
-        <h2 class="header-2">Small changes have a big impact</h2>
-        <p>Saying no to a paper receipt is one of the easiest ways that you can reduce your carbon footprint. Use our
-          receipt carbon calculator to see how much carbon you could save by going paperless.
-        </p>
-      </div>
-    </div>
-
-  </section>
-
-
-  <section id="footprint" class="footprint">
-    <h1 class="header-1">Calculate your annual receipt footprint</h1>
-
-    <p>Average number of transactions per week:</p> <span>21</span>
-
-    <progress max="100" value="70">70%</progress>
-
-    <div class="d-flex justify-content-around align-items-center">
-      <div class="box">
-        <h2>2.73kg</h2>
-        <h4>of CO2e</h4>
+      <div class="row overview-bottom">
+        <div class="col-12 col-md-6">
+          <img src="./assets/paper.svg" alt="" class="icon">
+        </div>
+        <div class="col-12 col-md-6">
+          <h2 class="header-2">Small changes have a big impact</h2>
+          <p>Saying no to a paper receipt is one of the easiest ways that you can reduce your carbon footprint. Use our
+            receipt carbon calculator to see how much carbon you could save by going paperless.
+          </p>
+        </div>
       </div>
 
-      <div class="box">
-        <h2>273</h2>
-        <h4>Plastic bags</h4>
-      </div>
-      <div class="box">
-        <h2>5.46</h2>
-        <h4>Pints of beer</h4>
-      </div>
-      <div class="box">
-        <h2>1.09</h2>
-        <h4>Cheese burgers</h4>
-      </div>
-    </div>
+    </section>
 
-    <div>
-      <h4 class="text-center my-5">Your individual footprint may seem small, but imagine the number of transactions made each day at businesses
-        up and down the country - each of our small footprints add up to a huge environmental problem</h4>
-    </div>
 
-    <!-- SMALL BUSINESS -->
-    <div class="smallbiz container">
+    <section id="footprint" class="footprint">
+      <h1 class="header-1 mb-5">Calculate your annual receipt footprint</h1>
+
       <div class="d-flex justify-content-between align-items-center">
-        <div>
-          Small business
-        </div>
-        <div>
-          26,000kg
-          of CO2e
-        </div>
-        <div>
-          2,600,000
-          Plastic bags
-        </div>
-        <div>
-          52,000
-          Pints of beer
-        </div>
-        <div>
-          10,400
-          Cheese burgers
-        </div>
+        <p>Average number of transactions per week:</p>
+        <h1>21</h1>
       </div>
-      <h6>*based on 20k transactions per week</h6>
-    </div>
 
-    <!-- LARGE BUSINESS -->
-    <div class="largebiz container">
-      <div class="d-flex justify-content-between align-items-center">
-        <div>
-          Large business
-        </div>
-        <div>
-          325,000kg
-          of CO2e
-        </div>
-        <div>
-          32,500,000
-          Plastic bags
-        </div>
-        <div>
-          650,000
-          Pints of beer
-        </div>
-        <div>
-          130,000
-          Cheese burgers
-        </div>
-
-      </div>
-      <h6>*based on 250k transactions per week
-      </h6>
-    </div>
-  </section>
+      <input type="range" name="range" id="range" class="range" min="0" max="100">
 
 
-  <!-- DOWNLOAD REPORT -->
-  <section class="download container">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        <h2 class="header-2">Download the report to learn more about the environmental effects of paper receipts
-        </h2>
+      <div class="box-wrapper d-flex justify-content-around align-items-center">
+        <div class="box">
+          <h2>2.73kg</h2>
+          <h4>of CO2e</h4>
+        </div>
+
+        <div class="box">
+          <h2>273</h2>
+          <h4>Plastic bags</h4>
+        </div>
+        <div class="box">
+          <h2>5.46</h2>
+          <h4>Pints of beer</h4>
+        </div>
+        <div class="box">
+          <h2>1.09</h2>
+          <h4>Cheese burgers</h4>
+        </div>
       </div>
-      <div class="col-12 col-md-6">
-        <img src="./assets/download.svg" alt="" class="icon">
+
+      <div>
+        <h4 class="text-center">Your individual footprint may seem small, but imagine the number of transactions
+          made each day at businesses
+          up and down the country - each of our small footprints add up to a huge environmental problem</h4>
       </div>
-    </div>
-  </section>
+
+      <!-- SMALL BUSINESS -->
+      <div class="smallbiz container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <img src="./assets/smallbiz.svg" alt="">
+            Small business
+          </div>
+          <div class="box">
+            <h2>26,000kg</h2>
+            <p>of CO2e</p>
+          </div>
+          <div class="box">
+            <h2>2,600,00</h2>
+            <p>Plastic bags</p>
+          </div>
+          <div class="box">
+            <h2>52,000</h2>
+            <p>Pints of beer</p>   
+          </div>
+          <div class="box">
+            <h2>10,400</h2>
+            <p>Cheese burgers</p> 
+          </div>
+        </div>
+        <h6>*based on 20k transactions per week</h6>
+      </div>
+
+      <!-- LARGE BUSINESS -->
+      <div class="largebiz container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <img src="./assets/largebiz.svg" alt="">
+            Large business
+          </div>
+          <div class="box">
+            <h2>325,000kg</h2>
+            <p>of CO2e</p>
+          </div>
+          <div class="box"> 
+            <h2>32,500,000</h2>
+            <p>Plastic bags</p>  
+          </div>
+          <div class="box">
+            <h2>650,000</h2>
+            <p>Pints of beer</p>
+          </div>
+          <div class="box">
+            <h2>130,000</h2>
+            <p>Cheese burgers</p>
+          </div>
+
+        </div>
+        <h6>*based on 250k transactions per week
+        </h6>
+      </div>
+    </section>
+
+
+    <!-- DOWNLOAD REPORT -->
+    <section class="download">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h2 class="header-2">Download the report to learn more about the environmental effects of paper receipts
+            </h2>
+          </div>
+          <div class="col-12 col-md-6 text-center">
+            <img src="./assets/download.svg" alt="" class="icon">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
 
   <!-- TREES -->
-  <div class="tree row">
-    <div class="col-12 col-md-6">
-      <img src="./assets/tree.svg" alt="" class="icon">
-    </div>
-    <div class="col-12 col-md-6">
-      <div>
-        <p>
-          Every year around 200,000 trees are destroyed in order to supply the UK with our paper receipts. For context,
-          that’s more trees than are in all of London’s eight Royal Parks combined. Trees are vital to our planet’s
-          health: they give us oxygen, trap dust and pollution from the atmosphere, and help stabilise our natural
-          environments.
-        </p>
-        <p>
-          But most importantly, they help us to combat global warming by trapping excess carbon in their wood. If we
-          left the trees we use for receipts in the ground, they’d remove over 4,000 tonnes of carbon dioxide from our
-          environment every year.
-        </p>
+  <div class="tree">
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img src="./assets/tree.svg" alt="" class="icon">
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="grid-layout">
+            <p>
+              Every year around 200,000 trees are destroyed in order to supply the UK with our paper receipts. For
+              context,
+              that’s more trees than are in all of London’s eight Royal Parks combined. Trees are vital to our planet’s
+              health: they give us oxygen, trap dust and pollution from the atmosphere, and help stabilise our natural
+              environments.
+            </p>
+            <p>
+              But most importantly, they help us to combat global warming by trapping excess carbon in their wood. If we
+              left the trees we use for receipts in the ground, they’d remove over 4,000 tonnes of carbon dioxide from
+              our
+              environment every year.
+            </p>
+          </div>
+          <a href="#overview" class="top">Back to infrographic</a>
+        </div>
       </div>
-      <a href="#" class="top">Back to infrographic</a>
     </div>
   </div>
 
 
   <!-- CHEMICALS -->
-  <div class="chemicals row">
-    <div class="col-12 col-md-6">
-      <img src="./assets/bottle.svg" alt="" class="icon">
-    </div>
-    <div class="col-12 col-md-6">
-      <div>
-        <p>
-          It’s estimated that more than half of all receipts printed in Europe contain toxic chemicals called bisphenol
-          A (BPA) or bisphenol S (BPS).These are the same chemicals that are found in single-use plastics and make
-          receipts almost impossible to recycle because these chemicals contaminate other recycled products during the
-          process. </p>
-        <p>
-          When we touch receipts, the chemical coating is absorbed into our bodies in seconds and studies have suggested
-          it may act as an endocrine disruptor, causing developmental and reproductive issues for both humans and
-          aquatic life. It’s estimated that over 120 tonnes of BPA is used in the production of the UK’s receipts each
-          year.</p>
+  <div class="chemicals">
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img src="./assets/bottle.svg" alt="" class="icon">
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="grid-layout">
+            <p>
+              It’s estimated that more than half of all receipts printed in Europe contain toxic chemicals called
+              bisphenol
+              A (BPA) or bisphenol S (BPS).These are the same chemicals that are found in single-use plastics and make
+              receipts almost impossible to recycle because these chemicals contaminate other recycled products during
+              the
+              process. </p>
+            <p>
+              When we touch receipts, the chemical coating is absorbed into our bodies in seconds and studies have
+              suggested
+              it may act as an endocrine disruptor, causing developmental and reproductive issues for both humans and
+              aquatic life. It’s estimated that over 120 tonnes of BPA is used in the production of the UK’s receipts
+              each
+              year.</p>
+          </div>
+          <a href="#overview" class="top">Back to infrographic</a>
+        </div>
       </div>
-      <a href="#" class="top">Back to infrographic</a>
     </div>
   </div>
 
 
   <!-- WASTE -->
-  <div class="waste row">
-    <div class="col-12 col-md-6">
-      <img src="./assets/truck.svg" alt="" class="icon">
-    </div>
-    <div class="col-12 col-md-6">
-      <div>
-        <p>
-          Over 90% of receipts are lost, damaged, or thrown away by consumers, creating more than 10,000 tonnes of paper
-          waste. In 2018, biodegradable waste like paper made up over one-quarter of the UK’s landfills - this kind of
-          waste is extremely damaging to the environment because it releases a potent greenhouse gas called methane as
-          it decomposes.</p>
-        <p>
-          Attempts to recycle thermal receipts rather than binning them is also extremely problematic - thermal paper
-          recycling has been identified as a major source of BPA contamination in the creation of recycled paper
-          products like toilet paper, and is a major source of BPA release to surface waters. </p>
+  <div class="waste">
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img src="./assets/truck.svg" alt="" class="icon">
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="grid-layout">
+            <p>
+              Over 90% of receipts are lost, damaged, or thrown away by consumers, creating more than 10,000 tonnes of
+              paper
+              waste. In 2018, biodegradable waste like paper made up over one-quarter of the UK’s landfills - this kind
+              of
+              waste is extremely damaging to the environment because it releases a potent greenhouse gas called methane
+              as
+              it decomposes.</p>
+            <p>
+              Attempts to recycle thermal receipts rather than binning them is also extremely problematic - thermal
+              paper
+              recycling has been identified as a major source of BPA contamination in the creation of recycled paper
+              products like toilet paper, and is a major source of BPA release to surface waters. </p>
+          </div>
+          <a href="#overview" class="top">Back to infrographic</a>
+        </div>
       </div>
-      <a href="#" class="top">Back to infrographic</a>
     </div>
   </div>
 
 
   <!-- CARBON -->
-  <div class="carbon row">
-    <div class="col-12 col-md-6">
-      <img src="./assets/carbon.svg" alt="" class="icon">
-    </div>
-    <div class="col-12 col-md-6">
-      <div>
-        <p>
-          Every year around 200,000 trees are destroyed in order to supply the UK with our paper receipts. For context,
-          that’s more trees than are in all of London’s eight Royal Parks combined. Trees are vital to our planet’s
-          health: they give us oxygen, trap dust and pollution from the atmosphere, and help stabilise our natural
-          environments.
-        </p>
-        <p>
-          But most importantly, they help us to combat global warming by trapping excess carbon in their wood. If we
-          left the trees we use for receipts in the ground, they’d remove over 4,000 tonnes of carbon dioxide from our
-          environment every year.
-        </p>
+  <div class="carbon">
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img src="./assets/carbon.svg" alt="" class="icon">
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="grid-layout">
+            <p>
+              Every year around 200,000 trees are destroyed in order to supply the UK with our paper receipts. For
+              context,
+              that’s more trees than are in all of London’s eight Royal Parks combined. Trees are vital to our planet’s
+              health: they give us oxygen, trap dust and pollution from the atmosphere, and help stabilise our natural
+              environments.
+            </p>
+            <p>
+              But most importantly, they help us to combat global warming by trapping excess carbon in their wood. If we
+              left the trees we use for receipts in the ground, they’d remove over 4,000 tonnes of carbon dioxide from
+              our
+              environment every year.
+            </p>
+          </div>
+          <a href="#overview" class="top">Back to infrographic</a>
+        </div>
       </div>
-      <a href="#" class="top">Back to infrographic</a>
     </div>
   </div>
 
 
   <!-- WATER-->
-  <div class="water row">
-    <div class="col-12 col-md-6">
-      <img src="./assets/water.svg" alt="" class="icon">
-    </div>
-    <div class="col-12 col-md-6">
-      <div>
-        <p>
-          It’s estimated that 1.6 billion litres of water are used to produce the thermal paper used to print the UK’s
-          receipts every year - that’s enough drinking water for almost 1.5 million people for an entire year. </p>
-        <p>
-          But it’s not just the water consumption that’s problematic: studies show that BPA from receipts is also
-          leaching into our waterways during the recycling process, causing problems in the normal reproductive
-          development of fish, reptiles and birds.</p>
+  <div class="water">
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img src="./assets/water.svg" alt="" class="icon">
+        </div>
+        <div class="col-12 col-md-6">
+          <div>
+            <p>
+              It’s estimated that 1.6 billion litres of water are used to produce the thermal paper used to print the
+              UK’s
+              receipts every year - that’s enough drinking water for almost 1.5 million people for an entire year. </p>
+            <p>
+              But it’s not just the water consumption that’s problematic: studies show that BPA from receipts is also
+              leaching into our waterways during the recycling process, causing problems in the normal reproductive
+              development of fish, reptiles and birds.</p>
+          </div>
+          <a href="#overview" class="top">Back to infrographic</a>
+        </div>
       </div>
-      <a href="#" class="top">Back to infrographic</a>
     </div>
   </div>
 
   <section class="faq">
     <h2 class="header-2 text-center">Frequently asked questions 🙋‍♀️</h2>
 
-    <div>
+    <div class="wrapper">
       <details>
         <summary>What is Beat the Receipt?</summary>
         <p>
@@ -300,7 +346,7 @@
             To encourage retailers to take a proactive approach by making paper receipts optional
 
           </li>
-          <li>● To advocate for consumer rights and work with consumer interest groups to provide
+          <li>To advocate for consumer rights and work with consumer interest groups to provide
             customers with digital alternatives to paper receipts</li>
         </ul>
       </details>
@@ -361,11 +407,11 @@
         <ul>
           <li>Most common type of paper used in receipts was Thermal Paper
           </li>
-          <li> ● Thermal Paper Receipts average size and weight was calculated based on industry averages.
+          <li>Thermal Paper Receipts average size and weight was calculated based on industry averages.
             <ul>
-              <li>● Receipts are on average 9 inches in length and 3.125 inches wide
+              <li>Receipts are on average 9 inches in length and 3.125 inches wide
               </li>
-              <li>● Three sizes were estimated based on an average grams per square meter of 50, 58 and 65 g/m2 </li>
+              <li>Three sizes were estimated based on an average grams per square meter of 50, 58 and 65 g/m2 </li>
             </ul>
           </li>
         </ul>
@@ -379,9 +425,9 @@
         </p>
 
         <ul>
-          <li>● UK average split of recycling, incineration with energy recovery and landfill
+          <li>UK average split of recycling, incineration with energy recovery and landfill
           </li>
-          <li>● 100% landfill scenario</li>
+          <li>100% landfill scenario</li>
         </ul>
 
         <p>For receipts that end up in landfill (which is almost all of them, as they can't safely be recycled)
@@ -405,14 +451,6 @@
           natural environment, contaminating water and soil and causing hormone disruptions in natural wildlife.</p>
       </details>
       <details>
-        <summary>Details</summary>
-        <p>
-          Lorem ipsum dolor sit amet, eu alia suscipit mei. Reque iriure delectus vix id, ex sed forensibus
-          suscipiantur. In eos exerci mollis apeirian, an qui latine alienum. Ad mea libris maluisset, consul assueverit
-          sea ex.
-        </p>
-      </details>
-      <details>
         <summary>How can I take action?</summary>
         <p>There are a number of ways you can support our campaign, including:</p>
 
@@ -424,7 +462,7 @@
             Let your favourite retailers know about the campaign and the problems with paper receipts
           </li>
           <li>
-            ● Encourage use of alternative solutions like Flux digital receipts
+            Encourage use of alternative solutions like Flux digital receipts
           </li>
           <li>
             Help us spread the word by downloading and sharing our report from beatthereceipt.com
@@ -483,24 +521,33 @@
 
   <footer>
     <div class="connected">
-      <h2 class="text-center">Stay connected with the campaign:</h2>
-      <input type="email" name="email" id="email" placeholder="Your email">
+      <div class="wrapper">
+        <h2 class="text-center my-5">Stay connected with the campaign:</h2>
+        <div class="webflow-style-input">
+          <input class="" type="email" placeholder="What's your email?"></input>
+          <button type="submit"><i class="icon ion-android-arrow-forward"></i></button>
+        </div>
+      </div>
     </div>
 
     <div class="socials">
-      <div class="flex">
-        <p>Need help?</p>
-        <a href="mailto:
-        hello@beatthereceipt.com">
-          hello@beatthereceipt.com</a>
-        <a href="#" target="_blank">Help Center</a>
-        <div>T I F</div>
-      </div>
+      <div class="wrapper">
+        <div class="d-flex justify-content-around align-items-center my-4">
+          <p class="text-white">Need help?</p>
+          <a href="mailto:
+          hello@beatthereceipt.com" class="text-white">
+            hello@beatthereceipt.com</a>
+          <a href="#" target="_blank" class="text-white">Help Center</a>
+          <div>T I F</div>
+        </div>
 
-      <p class="text-center">© 2021 Flux Systems Limited is registered in England and Wales (No. 09882195) and regulated
-        by the Financial Conduct Authority as an Account Information Services Provider under the firm reference number
-        791 567. EU and US Patent Pending (Application No. EP3396609)</p>
-      <a href="#" target="_blank">Cookies Policy</a>
+        <p class="text-center text-white">© 2021 Flux Systems Limited is registered in England and Wales (No. 09882195)
+          and
+          regulated
+          by the Financial Conduct Authority as an Account Information Services Provider under the firm reference number
+          791 567. EU and US Patent Pending (Application No. EP3396609)</p>
+        <a href="#" target="_blank" class="text-white">Cookies Policy</a>
+      </div>
     </div>
   </footer>
   <script src="script.js"></script>
