@@ -8,6 +8,16 @@
   font-size: 16px;
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Vesper Libre", serif;
+}
+
 a {
   color: #121212 !important;
   text-align: center;
@@ -56,16 +66,6 @@ hr {
   justify-items: center;
   align-items: flex-start;
   grid-gap: 2.5rem;
-}
-
-body {
-  width: 100%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  font-size: 1rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* input {
@@ -118,6 +118,7 @@ button {
   align-items: center;
   flex-direction: column;
   padding: 4em 2em;
+  background-color: #f0fff0;
 }
 
 .btn-link {
@@ -127,10 +128,7 @@ button {
   background-color: #b8e0c8;
 }
 
-.overview-top {
-  padding: 5em 1em;
-}
-
+.overview-top,
 .overview-bottom {
   padding: 5em 1em;
 }
@@ -145,7 +143,6 @@ button {
   padding: 5em 0;
 }
 
-
 .range {
   max-width: 940px;
   width: 100%;
@@ -157,7 +154,6 @@ button {
   overflow: hidden;
 }
 
-
 .range::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 21px;
@@ -166,14 +162,16 @@ button {
   background: #007565;
   cursor: pointer;
   border-radius: 50%;
-  transition: background .15s ease-in-out;
+  transition: background 0.15s ease-in-out;
   border: 5px solid #007565;
   z-index: 100;
-  box-shadow: -407px 0 0 400px #007565; 
+  box-shadow: -407px 0 0 400px #007565;
 }
 
 .box-wrapper {
-  padding: 7rem 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
 
 .box {
@@ -182,7 +180,6 @@ button {
   justify-content: center;
   align-items: center;
 }
-
 
 .smallbiz {
   padding: 5em 0;
@@ -382,4 +379,45 @@ details p {
 }
 .webflow-style-input button:hover {
   color: #57e6e6;
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .header-2 {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .subscribe {
+    padding: 3rem 2rem;
+  }
+
+  .overview-top,
+  .overview-bottom {
+    padding: 2em;
+  }
+
+  .grid-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .box-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footprint {
+    padding: 0 1rem;
+  }
+
+  .box-icon {
+    width: 90px;
+    height: auto;
+  }
+
+  .box {
+    margin: 3rem auto;
+  }
 }
