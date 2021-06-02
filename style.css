@@ -381,8 +381,29 @@ details p {
   color: #57e6e6;
 }
 
+.social-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+  margin: auto 1rem;
+}
+
+.help{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 425px) {
   /*Small smartphones [325px -> 425px]*/
+  p{
+    font-size: 15px;
+  }
+
   .header-2 {
     font-size: 28px;
     line-height: 33px;
@@ -419,5 +440,9 @@ details p {
 
   .box {
     margin: 3rem auto;
+  }
+
+  .help {
+    flex-direction: column ;
   }
 }
