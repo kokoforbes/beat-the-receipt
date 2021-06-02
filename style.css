@@ -68,11 +68,9 @@ hr {
   grid-gap: 2.5rem;
 }
 
-/* input {
-  border-style: none;
-  background: transparent;
+input {
   outline: none;
-} */
+}
 
 button {
   padding: 0;
@@ -261,6 +259,7 @@ details[open] summary ~ * {
     opacity: 1;
   }
 }
+
 details summary::-webkit-details-marker {
   display: none;
 }
@@ -288,97 +287,51 @@ details summary:after {
   transform-origin: center;
   transition: 200ms linear;
 }
+
 details[open] summary:after {
   transform: rotate(45deg);
   font-size: 2rem;
 }
+
 details summary {
   outline: 0;
 }
+
 details p {
   font-size: 0.95rem;
   margin: 0 0 1rem;
   padding-top: 0.3rem;
 }
 
-/* INPUT STYLING */
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100% 0;
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100% 0;
-  }
-}
-
-.webflow-style-input {
+.campaign {
   position: relative;
   display: flex;
   align-items: center;
   width: 100%;
   max-width: 550px;
-  height: 30px;
   margin: 0 auto;
-  border-radius: 2px;
-  padding: 1rem 1rem;
-  background: #ffffff;
 }
 
-.webflow-style-input:after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 999;
-  height: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  background-position: 0% 0%;
-  background: linear-gradient(
-    to right,
-    #b294ff,
-    #57e6e6,
-    #feffb8,
-    #57e6e6,
-    #b294ff,
-    #57e6e6
-  );
-  background-size: 500% auto;
-  -webkit-animation: gradient 3s linear infinite;
-  animation: gradient 3s linear infinite;
-}
-
-.webflow-style-input input {
+.campaign input {
+  width: 100%;
+  max-width: 550px;
+  height: 50px;
   flex-grow: 1;
   color: #121212;
   font-size: 1rem;
   line-height: 2.4rem;
   vertical-align: middle;
-}
-.webflow-style-input input::-webkit-input-placeholder {
-  color: #b8e0c8;
-  font-size: 1.2rem;
+  margin-right: .6rem;
+  padding: .6rem 3.7rem .6rem .6rem;
 }
 
-.webflow-style-input button {
-  color: #b8e0c8;
-  font-size: 2rem;
+
+.campaign button {
+  background-color: #b8e0c8;
+  color: #ffffff;
+  font-size: 1rem;
   line-height: 0.3rem;
   vertical-align: middle;
-  transition: color 0.25s;
-}
-.webflow-style-input button:hover {
-  color: #57e6e6;
 }
 
 .social-links {
