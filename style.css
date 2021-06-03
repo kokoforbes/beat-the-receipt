@@ -16,6 +16,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Vesper Libre", serif;
+  position: relative;
 }
 
 a {
@@ -91,11 +92,57 @@ button {
 .jumbotron {
   width: 100vw;
   height: 100vh;
+  position: relative;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #b8e0c8;
   color: #ffffff;
+}
+
+.bg-left {
+  left: -10%;
+  top: -10%;
+  position: absolute;
+  min-width: 8rem;
+  min-height: 8rem;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.bg-right {
+  right: -10%;
+  top: -10%;
+  position: absolute;
+  min-width: 8rem;
+  min-height: 8rem;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.bt-left {
+  bottom: -10%;
+  left: -10%;
+  position: absolute;
+  min-width: 8rem;
+  min-height: 8rem;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.bt-right {
+  right: -10%;
+  bottom: -10%;
+  position: absolute;
+  min-width: 8rem;
+  min-height: 8rem;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+svg {
+  overflow: hidden;
 }
 
 .header-text {
@@ -111,6 +158,7 @@ button {
 }
 
 .subscribe {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
