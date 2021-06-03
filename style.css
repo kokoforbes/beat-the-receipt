@@ -147,12 +147,11 @@ button {
   height: 8px;
   -webkit-appearance: none;
   background: #b8e0c8;
-  outline: none;
   border-radius: 15px;
   overflow: hidden;
 }
 
-.range::-webkit-slider-thumb {
+/* .range::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 21px;
   height: 21px;
@@ -161,10 +160,9 @@ button {
   cursor: pointer;
   border-radius: 50%;
   transition: background 0.15s ease-in-out;
-  border: 5px solid #007565;
   z-index: 100;
   box-shadow: -407px 0 0 400px #007565;
-}
+} */
 
 .box-wrapper {
   display: flex;
@@ -321,10 +319,9 @@ details p {
   font-size: 1rem;
   line-height: 2.4rem;
   vertical-align: middle;
-  margin-right: .6rem;
-  padding: .6rem 3.7rem .6rem .6rem;
+  margin-right: 0.6rem;
+  padding: 0.6rem 3.7rem 0.6rem 0.6rem;
 }
-
 
 .campaign button {
   background-color: #b8e0c8;
@@ -345,16 +342,16 @@ details p {
   margin: auto 1rem;
 }
 
-.help{
+.help {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 @media only screen and (max-width: 425px) {
   /*Small smartphones [325px -> 425px]*/
-  p{
-    font-size: 15px;
+  p {
+    font-size: 16px;
   }
 
   .header-2 {
@@ -396,6 +393,6 @@ details p {
   }
 
   .help {
-    flex-direction: column ;
+    flex-direction: column;
   }
 }
