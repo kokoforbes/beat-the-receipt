@@ -32,9 +32,9 @@ p {
   padding-top: 0.3rem;
 }
 
-hr {
-  width: 100vw;
-  margin: 10px 20px;
+.hr {
+  margin: 15px auto;
+  border-bottom: 2px solid #000000;
 }
 
 .header-1 {
@@ -83,6 +83,7 @@ button {
 .wrapper {
   max-width: 940px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .box {
@@ -394,6 +395,57 @@ details p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* PAPERLESS */
+.paperless-header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #b8e0c8;
+  color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-right {
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  min-width: 8rem;
+  min-height: 8rem;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.bottom-left {
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+  min-width: 8rem;
+  min-height: 8rem;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.supermarket {
+  background-color: #bdb5a4;
+  padding: 5em 3em;
+  margin: 4rem auto;
+}
+
+.pledge-input {
+  height: 33px;
+  max-width: 392px;
+  width: 100%;
+  margin-top: .7rem;
+}
+
+sup {
+  color: red;
 }
 
 @media only screen and (max-width: 425px) {
