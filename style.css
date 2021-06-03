@@ -197,10 +197,9 @@ svg {
   -webkit-appearance: none;
   background: #b8e0c8;
   border-radius: 15px;
-  overflow: hidden;
 }
 
-/* .range::-webkit-slider-thumb {
+.range::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 21px;
   height: 21px;
@@ -210,8 +209,8 @@ svg {
   border-radius: 50%;
   transition: background 0.15s ease-in-out;
   z-index: 100;
-  box-shadow: -407px 0 0 400px #007565;
-} */
+  /* box-shadow: -407px 0 0 400px #007565; */
+}
 
 .box-wrapper {
   display: flex;
@@ -441,7 +440,7 @@ details p {
   height: 33px;
   max-width: 392px;
   width: 100%;
-  margin-top: .7rem;
+  margin-top: 0.7rem;
 }
 
 sup {

@@ -14,3 +14,6 @@ function rangeSlide(value) {
   document.getElementById("beer").innerHTML = c.toFixed(2);
   document.getElementById("burger").innerHTML = d.toFixed(2);
 }
+
+
+window.onload = rangeSlide(21);
