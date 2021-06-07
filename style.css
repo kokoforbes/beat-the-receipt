@@ -134,7 +134,7 @@ svg {
   padding: 15px 30px;
   border: 1px solid #000;
   background-color: #b8e0c8;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .overview-top,
@@ -359,6 +359,7 @@ details p {
   color: #121212;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -374,6 +375,12 @@ details p {
   max-width: 392px;
   width: 100%;
   margin-top: 0.7rem;
+}
+
+.pledge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 sup {
@@ -426,5 +433,9 @@ sup {
 
   .help {
     flex-direction: column;
+  }
+
+  .pledge {
+   flex-direction: column;
   }
 }
