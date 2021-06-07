@@ -377,7 +377,7 @@ details p {
   margin-top: 0.7rem;
 }
 
-.pledge {
+.pledge-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -435,7 +435,7 @@ sup {
     flex-direction: column;
   }
 
-  .pledge {
+  .pledge-btn {
    flex-direction: column;
   }
 }
