@@ -363,26 +363,6 @@ details p {
   align-items: center;
 }
 
-.top-right {
-  right: 0px;
-  top: 0px;
-  position: absolute;
-  min-width: 8rem;
-  min-height: 8rem;
-  max-width: 50%;
-  max-height: 50%;
-}
-
-.bottom-left {
-  left: 0px;
-  bottom: 0px;
-  position: absolute;
-  min-width: 8rem;
-  min-height: 8rem;
-  max-width: 50%;
-  max-height: 50%;
-}
-
 .supermarket {
   background-color: #bdb5a4;
   padding: 5em 3em;
