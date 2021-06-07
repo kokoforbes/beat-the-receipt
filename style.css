@@ -99,48 +99,8 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #FDFEFD;
+  background-color: #b8e0c8;
   color: #121212;
-}
-
-.bg-left {
-  left: -10%;
-  top: -10%;
-  position: absolute;
-  min-width: 8rem;
-  min-height: 8rem;
-  max-width: 50%;
-  max-height: 50%;
-}
-
-.bg-right {
-  right: -10%;
-  top: -10%;
-  position: absolute;
-  min-width: 8rem;
-  min-height: 8rem;
-  max-width: 50%;
-  max-height: 50%;
-}
-
-.bt-left {
-  bottom: -10%;
-  left: -10%;
-  position: absolute;
-  min-width: 8rem;
-  min-height: 8rem;
-  max-width: 50%;
-  max-height: 50%;
-}
-
-.bt-right {
-  right: -10%;
-  bottom: -10%;
-  position: absolute;
-  min-width: 8rem;
-  min-height: 8rem;
-  max-width: 50%;
-  max-height: 50%;
 }
 
 svg {
@@ -395,7 +355,7 @@ details p {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-color: #FDFEFD;
+  background-color: #b8e0c8;
   color: #121212;
   overflow: hidden;
   display: flex;
