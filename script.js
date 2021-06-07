@@ -9,10 +9,10 @@ function rangeSlide(value) {
   var c = value * 0.26;
   var d = value * 0.05;
 
-  document.getElementById("carbon").innerHTML = a.toFixed(2);
-  document.getElementById("bags").innerHTML = b.toFixed(2);
-  document.getElementById("beer").innerHTML = c.toFixed(2);
-  document.getElementById("burger").innerHTML = d.toFixed(2);
+  document.getElementById("carbon").innerHTML = a.toFixed(0) + "g";
+  document.getElementById("bags").innerHTML = b.toFixed(0);
+  document.getElementById("beer").innerHTML = c.toFixed(0);
+  document.getElementById("burger").innerHTML = d.toFixed(0);
 }
 
 

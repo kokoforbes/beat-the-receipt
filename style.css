@@ -96,10 +96,11 @@ button {
   position: relative;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #b8e0c8;
-  color: #ffffff;
+  background-color: #FDFEFD;
+  color: #121212;
 }
 
 .bg-left {
@@ -173,6 +174,7 @@ svg {
   padding: 15px 30px;
   border: 1px solid #000;
   background-color: #b8e0c8;
+  text-decoration: none;
 }
 
 .overview-top,
@@ -231,10 +233,6 @@ svg {
 
 .largebiz {
   padding: 5em 0;
-}
-
-.download {
-  padding: 5em 1em;
 }
 
 .top {
@@ -402,8 +400,8 @@ details p {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-color: #b8e0c8;
-  color: #ffffff;
+  background-color: #FDFEFD;
+  color: #121212;
   overflow: hidden;
   display: flex;
   justify-content: center;
