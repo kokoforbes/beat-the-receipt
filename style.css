@@ -52,14 +52,16 @@ p {
   line-height: 48px;
 }
 
-.icon {
+.box-icon {
   width: 356px;
   height: 300px;
 }
-.icon-cover{
+
+.icon-cover {
   width: 196px;
   height: 140px;
 }
+
 .text-white {
   color: #ffffff;
 }
@@ -102,8 +104,10 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #b8e0c8;
+  background-color: #072a2c;
   color: #ffffff;
+  background-image: url("./assets/91508.jpg");
+  background-size: cover;
 }
 
 svg {
@@ -142,7 +146,7 @@ svg {
 
 .overview-top,
 .overview-bottom {
-  padding: 5em 1em;
+  padding: 5em 0 1em 0;
 }
 
 .overview-img {
@@ -397,6 +401,15 @@ sup {
     font-size: 16px;
   }
 
+  .wrapper {
+    padding: 0 1rem;
+  }
+
+  .jumbotron {
+    background-image: none;
+    padding: 0 2rem;
+  }
+
   .header-2 {
     font-size: 28px;
     line-height: 33px;
@@ -404,11 +417,6 @@ sup {
 
   .subscribe {
     padding: 3rem 2rem;
-  }
-
-  .overview-top,
-  .overview-bottom {
-    padding: 2em;
   }
 
   .grid-layout {
@@ -440,6 +448,6 @@ sup {
   }
 
   .pledge-btn {
-   flex-direction: column;
+    flex-direction: column;
   }
 }
