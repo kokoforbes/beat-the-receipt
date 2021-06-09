@@ -53,10 +53,13 @@ p {
 }
 
 .icon {
-  width: 256px;
-  height: 200px;
+  width: 356px;
+  height: 300px;
 }
-
+.icon-cover{
+  width: 196px;
+  height: 140px;
+}
 .text-white {
   color: #ffffff;
 }
@@ -100,7 +103,7 @@ button {
   justify-content: center;
   align-items: center;
   background-color: #b8e0c8;
-  color: #121212;
+  color: #ffffff;
 }
 
 svg {
@@ -146,6 +149,7 @@ svg {
   max-width: 100%;
   display: block;
   height: auto;
+  size: 7em;
 }
 
 .footprint {
@@ -226,7 +230,7 @@ svg {
 }
 
 .faq {
-  background-color: #bdb5a4;
+  background-color: #f7eef7;
   padding: 7em 1em;
 }
 
@@ -365,7 +369,7 @@ details p {
 }
 
 .supermarket {
-  background-color: #bdb5a4;
+  background-color: #f7eef7;
   padding: 5em 3em;
   margin: 4rem auto;
 }
