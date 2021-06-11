@@ -195,11 +195,7 @@ svg {
   align-items: center;
 }
 
-.smallbiz {
-  padding: 5em 0;
-}
-
-.largebiz {
+.smallbiz, .largebiz {
   padding: 5em 0;
 }
 
@@ -430,6 +426,10 @@ sup {
     justify-content: space-between;
   }
 
+  .smallbiz, .largebiz {
+    padding: 1em 0;
+  }
+
   .footprint {
     padding: 0 1rem;
   }
@@ -440,7 +440,7 @@ sup {
   }
 
   .box {
-    margin: 3rem auto;
+    margin: 2rem auto;
   }
 
   .help {
