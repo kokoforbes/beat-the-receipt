@@ -71,7 +71,7 @@ p {
   grid-template-columns: repeat(2, auto);
   justify-items: center;
   align-items: flex-start;
-  grid-gap: 3.0rem;
+  grid-gap: 3rem;
 }
 
 input {
@@ -160,6 +160,10 @@ svg {
   padding: 5em 0;
 }
 
+input[type="range"]:focus {
+  outline: none;
+}
+
 .range {
   max-width: 940px;
   width: 100%;
@@ -167,6 +171,26 @@ svg {
   -webkit-appearance: none;
   background: #b8e0c8;
   border-radius: 15px;
+}
+
+.range::-webkit-slider-runnable-track {
+  color: #018786;
+}
+
+.range::-moz-range-track {
+  color: #018786;
+}
+
+.range::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: #007565;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.15s ease-in-out;
+  z-index: 100;
 }
 
 .range::-webkit-slider-thumb {
@@ -195,7 +219,8 @@ svg {
   align-items: center;
 }
 
-.smallbiz, .largebiz {
+.smallbiz,
+.largebiz {
   padding: 5em 0;
 }
 
@@ -426,7 +451,8 @@ sup {
     justify-content: space-between;
   }
 
-  .smallbiz, .largebiz {
+  .smallbiz,
+  .largebiz {
     padding: 1em 0;
   }
 
