@@ -12,13 +12,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Vesper+Libre:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
   <section class="jumbotron">
     <img src="./assets/contract.svg" alt="" class="icon-cover text-center mb-3">
     <div>
-      <h1 class="header-text" style="font-family: 'Vesper Libre'";>The Paperless Pledge</h1>
+      <h1 class="header-text" style="font-family: 'Vesper Libre'" ;>The Paperless Pledge</h1>
       <h3 class="header-subtext">Make paper receipts optional by 2023</h3>
     </div>
   </section>
@@ -29,7 +30,7 @@
     <div class="row py-5 px-3">
       <div class="col-12 col-md-6">
         <p><b>Paper receipts are an unnecessary drain on our natural resources and a barrier to reaching our net-zero
-          goals.</b>
+            goals.</b>
         </p>
         <p><b>Signatories to the Paperless Pledge commit to making paper receipts optional in-store by 2023.</b></p>
         <p><b>We call on all retailers to join us on our mission to Ditch the Receipt.</b></p>
@@ -40,7 +41,8 @@
     </div>
 
     <div class="pledge-btn">
-      <a href="mailto:francismaduakor7@gmail.com? subject= Sign the Paperless Pledge " class="btn-link my-3">Sign the pledge as a retailer</a>
+      <a href="mailto:francismaduakor7@gmail.com? subject= Sign the Paperless Pledge " class="btn-link my-3">Sign the
+        pledge as a retailer</a>
 
       <a href="#petition" class="text-center btn-link">Sign the Pledge as a consumer</a>
 
@@ -70,7 +72,8 @@
         till - so why are we still printing them automatically for every transaction?
       </p>
 
-      <p>The retail industry has already made significant progress in reducing carbon emissions. Switching to optional receipt
+      <p>The retail industry has already made significant progress in reducing carbon emissions. Switching to optional
+        receipt
         printing is one of the fastest, simplest ways to cut your annual emissions and reduce recycling and refuse
         pressures.
       </p>
@@ -91,19 +94,19 @@
 
       <p class="my-5"><b>Add your voice to the campaign by signing our letter to the supermarkets, below.</b></p>
 
-      <form action="#" class="text-center" id="petition">
+      <form class="text-center" id="petition">
         <fieldset>
           <div class="row my-5">
             <div class="col-md-6 col-sm-12">
               <label class="d-flex flex-column align-items-start">
                 <span class="">First Name:<sup title="This is a required field">*</sup></span>
-                <input type="text" name="firstName" required="" class="pledge-input">
+                <input type="text" name="firstName" required class="pledge-input" id="firstName">
               </label>
             </div>
             <div class="col-md-6 col-sm-12">
               <label class="d-flex flex-column align-items-start">
                 <span class="">Last Name:<sup title="This is a required field">*</sup></span>
-                <input type="text" name="lastName" required="" class="pledge-input">
+                <input type="text" name="lastName" required class="pledge-input" id="lastName">
               </label>
             </div>
           </div>
@@ -112,13 +115,13 @@
             <div class="col-sm-12 col-md-6">
               <label class="d-flex flex-column align-items-start">
                 <span class="">Email Address:<sup title="This is a required field">*</sup></span>
-                <input type="email" name="email" required="" class="pledge-input">
+                <input type="email" name="email" required class="pledge-input" id="email">
               </label>
             </div>
             <div class="col-sm-12 col-md-6">
               <label class="d-flex flex-column align-items-start">
                 <span class="">Postal Code:</span>
-                <input type="text" name="postalCode" class="pledge-input">
+                <input type="text" name="postalCode" class="pledge-input" id="postalCode">
               </label>
             </div>
           </div>
@@ -128,7 +131,7 @@
             <div class="col-sm-12 col-md-6">
               <label class="d-flex flex-column align-items-start">
                 <span class="">Country:</span>
-                <select name="country" class="pledge-input">
+                <select name="country" class="pledge-input" id="country">
                   <option value="SNG">Singapore</option>
                   <option value="IND">Indonesia</option>
                   <option value="MLA">Malaysia</option>
@@ -154,7 +157,8 @@
       </p>
 
       <p>
-        But most importantly, paper receipts emit 2.5Kg of CO2e throughout their lifetime. That’s more than 750,000 tonnes
+        But most importantly, paper receipts emit 2.5Kg of CO2e throughout their lifetime. That’s more than 750,000
+        tonnes
         of carbon leaching into the atmosphere every year for the sake of these tiny pieces of paper - most of which end
         up lost or thrown away.
       </p>
@@ -203,8 +207,9 @@
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
 
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./pledge.js"></script>
 </body>
 
 </html>
