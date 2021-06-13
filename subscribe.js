@@ -15,9 +15,7 @@ function rangeSlide(value) {
   document.getElementById("burger").innerHTML = d.toFixed(0);
 }
 
-window.onload = (function() {
-  alert(document.getElementById("rangeValue"))
-})
+window.onload = rangeSlide(21);
 
 // SUBSCRIBE
 const subscribe = (email) => {
@@ -36,6 +34,7 @@ const subscribe = (email) => {
 
       if (response.status === 200) {
         alert("successfully subscribed!");
+        document.getElementById("campaign").reset();
       } else {
         return;
       }
@@ -56,4 +55,3 @@ const subEvent = formSub.addEventListener("submit", (event) => {
 
   subscribe(data);
 });
-

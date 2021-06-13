@@ -15,6 +15,7 @@ const signPledge = (formData) => {
 
       if (response.status === 200) {
         alert("Petition signed successfully, Thank you!");
+        document.getElementById("petiton").reset();
       } else {
         return;
       }
